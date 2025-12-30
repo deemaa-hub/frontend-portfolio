@@ -1,14 +1,14 @@
-/* تنسيق عام */
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, Tahoma, sans-serif;
-    direction: rtl;
+    direction: ltr;
     background-color: #f4f6f8;
     color: #333;
 }
 
-/* الحاوية الرئيسية */
+
 .container {
     max-width: 700px;
     margin: 60px auto;
@@ -19,31 +19,31 @@ body {
     text-align: center;
 }
 
-/* الاسم */
+
 h1 {
     margin-bottom: 10px;
     color: #2c3e50;
 }
 
-/* العنوان الوظيفي */
+
 .job-title {
     font-size: 18px;
     color: #777;
     margin-bottom: 30px;
 }
 
-/* عناوين الأقسام */
+
 h2 {
     color: #34495e;
     margin-top: 30px;
 }
 
-/* النص */
+
 p {
     line-height: 1.8;
 }
 
-/* المهارات */
+
 .skills {
     list-style: none;
     padding: 0;
@@ -59,12 +59,66 @@ p {
     font-size: 14px;
 }
 
-/* قسم التواصل */
+
+.projects {
+    margin-top: 20px;
+}
+
+.project {
+    background: #f9fafb;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #1a73e8;
+}
+
+.project p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.project a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.projects {
+    direction: ltr;
+    text-align: left;
+}
+
+.project {
+    direction: ltr;
+    text-align: left;
+}
+.project a {
+    font-size: 13px;
+    padding: 4px 10px;
+    border: 1px solid #1a73e8;
+    border-radius: 15px;
+}
+
+
+
+
 .contact {
     margin-top: 30px;
 }
 
-/* زر */
+
 .button {
     display: inline-block;
     margin-top: 20px;
