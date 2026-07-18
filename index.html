@@ -2,82 +2,306 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Frontend Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deema Abed Alhameed — Frontend Developer</title>
+    <meta name="description"
+        content="Frontend developer specializing in React. Portfolio of interactive dashboards, UI systems, and web applications." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1>Deema Abed Alhameed</h1>
-        <p class="job-title">Front-End Developer</p>
 
-        <h2>skills</h2>
-        <ul class="skills">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-        </ul>
-
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="project">
-                <h3>Simple Calculator</h3>
-                <p>A simple calculator built with HTML, CSS, and JavaScript.</p>
-                <a href="https://deemaa-hub.github.io/simple-calculator/" target="_blank">Live Demo</a> |
-                <a href="https://github.com/deemaa-hub/simple-calculator" target="_blank">GitHub</a>
+    <header>
+        <nav>
+            <div class="logo">D<span class="dot">.</span>A</div>
+            <button class="nav-toggle" id="navToggle">MENU</button>
+            <div class="navlinks" id="navLinks">
+                <a href="#about"><span class="num">01</span>About</a>
+                <a href="#skills"><span class="num">02</span>Skills</a>
+                <a href="#experience"><span class="num">03</span>Experience</a>
+                <a href="#projects"><span class="num">04</span>Projects</a>
+                <a href="#contact"><span class="num">05</span>Contact</a>
             </div>
+        </nav>
+    </header>
 
-            <div class="project">
-                <h3>Simple To-Do App</h3>
-                <p>A task management app with add, delete, filters, and local storage.</p>
-                <a href="https://deemaa-hub.github.io/simple-todo-app/" target="_blank">Live Demo</a> |
-                <a href="https://github.com/deemaa-hub/simple-todo-app" target="_blank">GitHub</a>
+    <section id="hero">
+        <div class="wrap">
+            <div>
+                <div class="eyebrow">Frontend Developer</div>
+                <h1 class="hero-title">Deema Abed<br>Al<span>hameed</span></h1>
+                <div class="hero-role mono">Building interactive interfaces with React</div>
+                <p class="hero-desc">Software Engineering graduate and frontend developer focused on building intuitive,
+                    clean, and responsive UI systems. Currently building with React, Vite, and a growing eye for
+                    interaction design.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+                </div>
             </div>
-
-            <div class="project">
-                <h3>Tasky Landing Page</h3>
-                <p>A responsive landing page built using HTML and CSS.</p>
-                <a href="https://deemaa-hub.github.io/tasky-landing-page/" target="_blank">Live Demo</a> |
-                <a href="https://github.com/deemaa-hub/tasky-landing-page" target="_blank">GitHub</a>
+            <div class="kcard">
+                <div class="kcard-top">
+                    <span class="chip chip-green">● Open to work</span>
+                    <div class="kcard-dots"><span></span><span></span><span></span></div>
+                </div>
+                <h4>Kanban Board</h4>
+                <p>Drag & drop task board with analytics dashboard.</p>
+                <div class="kcard-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">dnd-kit</span>
+                    <span class="tag">Framer Motion</span>
+                </div>
+                <div class="kcard-foot">
+                    <div class="avatar">DA</div>
+                    <span class="mono">Featured project</span>
+                </div>
             </div>
-
-            <div class="project">
-                <h3>Watch Store Website</h3>
-                <p>A personal/educational project developed to showcase fundamental frontend web development skills.</p>
-                <a href="https://deemaa-hub.github.io/watch-site/" target="_blank">Live Demo</a> |
-                <a href="https://github.com/deemaa-hub/watch-site" target="_blank">GitHub</a>
-            </div>
-
-            <div class="project">
-                <h3>AquaDash Dashboard</h3>
-                <p>A modern and clean administrative dashboard interface built with HTML5 and CSS3.</p>
-                <a href="https://deemaa-hub.github.io/AquaDash-UI/" target="_blank">Live Demo</a> |
-                <a href="https://github.com/deemaa-hub/AquaDash-UI" target="_blank">GitHub</a>
-            </div>
-
-            <div class="project">
-                <h3>Portfolio Dashboard</h3>
-                <p>A responsive admin panel built with Vanilla JavaScript and CSS Variables to manage, track, and update software projects dynamically using Local Storage.</p>
-                <a href="https://deemaa-hub.github.io/Portfolio-Dashboard/" target="_blank">Live Demo</a> |
-                <a href="https://github.com/deemaa-hub/Portfolio-Dashboard" target="_blank">GitHub</a>
-            </div>
-            <div class="project">
-                <h3>Kanban Board</h3>
-                <p>A professional Kanban board with drag & drop, dark mode, tags, priorities, due dates, checklists, and a progress dashboard — built with React and Vite.</p>
-                <a href="https://deemaa-hub.github.io/kanban-board/" target="_blank">Live Demo</a> |
-                <a href="https://github.com/deemaa-hub/kanban-board" target="_blank">GitHub</a>
-            </div>
-
-        </div> <div class="contact">
-            <a href="mailto:deemaabedlahameed@gmail.com" class="button">
-                contact with me
-            </a>
         </div>
-    
+    </section>
 
-    </div> </body>
+    <section id="about">
+        <div class="wrap">
+            <div class="about-avatar">DA</div>
+            <div class="about-body">
+                <div class="eyebrow">01 · About</div>
+                <p>I'm <strong>Deema</strong>, a Software Engineering graduate and frontend developer.
+                    I care about the details that separate a working interface from a good one — smooth interactions,
+                    sensible state management, and layouts that hold up on every screen size.</p>
+                <p>My recent work centers on <strong>React</strong>: building a full-featured Kanban board with
+                    drag-and-drop, dark mode, and a custom analytics dashboard from scratch. I'm currently expanding
+                    into data science and AI fundamentals through the <strong>GCI World 2026 program at the University
+                        of Tokyo's Matsuo Lab</strong>, alongside my frontend work.</p>
+                <div class="about-meta">
+                    <div>
+                        <span class="mono">Based in</span>
+                        <p>Palestine</p>
+                    </div>
+                    <div>
+                        <span class="mono">Focus</span>
+                        <p>Frontend / React</p>
+                    </div>
+                    <div>
+                        <span class="mono">Status</span>
+                        <p>Open to remote & local roles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="wrap">
+            <div class="sec-head">
+                <div class="eyebrow">02 · Skills</div>
+                <h2>What I work with</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <span class="mono">Core</span>
+                    <div class="skill-list">
+                        <span class="skill-pill">HTML5</span>
+                        <span class="skill-pill">CSS3</span>
+                        <span class="skill-pill">JavaScript (ES6+)</span>
+                        <span class="skill-pill">Responsive Design</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <span class="mono">Frameworks & Libraries</span>
+                    <div class="skill-list">
+                        <span class="skill-pill">React</span>
+                        <span class="skill-pill">Vite</span>
+                        <span class="skill-pill">Context API</span>
+                        <span class="skill-pill">Framer Motion</span>
+                        <span class="skill-pill">dnd-kit</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <span class="mono">Tools & Workflow</span>
+                    <div class="skill-list">
+                        <span class="skill-pill">Git & GitHub</span>
+                        <span class="skill-pill">GitHub Pages</span>
+                        <span class="skill-pill">localStorage</span>
+                        <span class="skill-pill">Figma-to-code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="wrap">
+            <div class="sec-head">
+                <div class="eyebrow">03 · Experience</div>
+                <h2>Timeline</h2>
+            </div>
+            <div class="timeline">
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <span class="mono">2026</span>
+                    <h3>GCI World — Data Science & AI Program <span>· Matsuo Lab, University of Tokyo</span></h3>
+                    <p>Selected participant in a global cohort program, building foundational data science and AI skills
+                        alongside frontend work.</p>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <span class="mono">2025 — 2026</span>
+                    <h3>Frontend Development Internship <span>· 90 hours</span></h3>
+                    <p>Hands-on web development internship focused on building and shipping frontend features in a real
+                        project environment.</p>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <span class="mono">2022 — 2026</span>
+                    <h3>B.Sc. Software Engineering <span>· University of Palestine</span></h3>
+                    <p>Specializing in frontend development, with coursework spanning web technologies, data structures,
+                        and software design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="wrap">
+            <div class="sec-head">
+                <div class="eyebrow">04 · Projects</div>
+                <h2>Featured work</h2>
+            </div>
+
+            <div class="proj-featured">
+                <div class="proj-card reveal">
+                    <div>
+                        <div class="proj-head">
+                            <h3>Kanban Board</h3>
+                            <span class="chip chip-green">Live</span>
+                        </div>
+                        <p>A professional task management board with drag-and-drop, dark mode, tags, priorities, due
+                            dates, checklists, and a custom analytics dashboard with a CSS conic-gradient donut chart —
+                            built with React and Vite.</p>
+                        <div class="proj-tags">
+                            <span class="tag">React</span><span class="tag">Vite</span><span class="tag">Context
+                                API</span><span class="tag">dnd-kit</span><span class="tag">Framer Motion</span>
+                        </div>
+                        <div class="proj-links">
+                            <a href="https://deemaa-hub.github.io/kanban-board/" target="_blank" rel="noopener">↗ Live
+                                Demo</a>
+                            <a href="https://github.com/deemaa-hub/kanban-board" target="_blank" rel="noopener">↗
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-card reveal">
+                    <div>
+                        <div class="proj-head">
+                            <h3>Portfolio Dashboard</h3>
+                            <span class="chip chip-blue">Shipped</span>
+                        </div>
+                        <p>A responsive admin panel built with vanilla JavaScript and CSS variables to manage, track,
+                            and update software projects dynamically, with persistent state through Local Storage.</p>
+                        <div class="proj-tags">
+                            <span class="tag">JavaScript</span><span class="tag">CSS Variables</span><span
+                                class="tag">localStorage</span>
+                        </div>
+                        <div class="proj-links">
+                            <a href="https://deemaa-hub.github.io/Portfolio-Dashboard/" target="_blank" rel="noopener">↗
+                                Live Demo</a>
+                            <a href="https://github.com/deemaa-hub/Portfolio-Dashboard" target="_blank" rel="noopener">↗
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-card reveal">
+                    <div>
+                        <div class="proj-head">
+                            <h3>AquaDash Dashboard</h3>
+                            <span class="chip chip-blue">Shipped</span>
+                        </div>
+                        <p>A modern, clean administrative dashboard interface exploring layout systems and component
+                            structure with HTML5 and CSS3.</p>
+                        <div class="proj-tags">
+                            <span class="tag">HTML5</span><span class="tag">CSS3</span>
+                        </div>
+                        <div class="proj-links">
+                            <a href="https://deemaa-hub.github.io/AquaDash-UI/" target="_blank" rel="noopener">↗ Live
+                                Demo</a>
+                            <a href="https://github.com/deemaa-hub/AquaDash-UI" target="_blank" rel="noopener">↗
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-label">More Projects</div>
+            <div class="proj-grid-small">
+                <div class="proj-card-sm reveal">
+                    <h4>Watch Store Website</h4>
+                    <p>A personal/educational project showcasing fundamental frontend web development skills.</p>
+                    <div class="proj-links">
+                        <a href="https://deemaa-hub.github.io/watch-site/" target="_blank" rel="noopener">↗ Demo</a>
+                        <a href="https://github.com/deemaa-hub/watch-site" target="_blank" rel="noopener">↗ Code</a>
+                    </div>
+                </div>
+                <div class="proj-card-sm reveal">
+                    <h4>Tasky Landing Page</h4>
+                    <p>A responsive landing page built with HTML and CSS, focused on layout and typography.</p>
+                    <div class="proj-links">
+                        <a href="https://deemaa-hub.github.io/tasky-landing-page/" target="_blank" rel="noopener">↗
+                            Demo</a>
+                        <a href="https://github.com/deemaa-hub/tasky-landing-page" target="_blank" rel="noopener">↗
+                            Code</a>
+                    </div>
+                </div>
+                <div class="proj-card-sm reveal">
+                    <h4>Simple To-Do App</h4>
+                    <p>A task management app with add, delete, filtering, and local storage persistence.</p>
+                    <div class="proj-links">
+                        <a href="https://deemaa-hub.github.io/simple-todo-app/" target="_blank" rel="noopener">↗
+                            Demo</a>
+                        <a href="https://github.com/deemaa-hub/simple-todo-app" target="_blank" rel="noopener">↗
+                            Code</a>
+                    </div>
+                </div>
+                <div class="proj-card-sm reveal">
+                    <h4>Simple Calculator</h4>
+                    <p>A calculator built with HTML, CSS, and JavaScript — early groundwork in DOM logic.</p>
+                    <div class="proj-links">
+                        <a href="https://deemaa-hub.github.io/simple-calculator/" target="_blank" rel="noopener">↗
+                            Demo</a>
+                        <a href="https://github.com/deemaa-hub/simple-calculator" target="_blank" rel="noopener">↗
+                            Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="wrap">
+            <div class="eyebrow">05 · Contact</div>
+            <h2>Let's build something.</h2>
+            <p>Open to frontend developer roles — remote or local. Feel free to reach out.</p>
+            <div class="contact-cta">
+                <a href="mailto:deemaabedlahameed@gmail.com" class="btn btn-primary">Email Me</a>
+                <a href="https://github.com/deemaa-hub" target="_blank" rel="noopener" class="btn btn-ghost">GitHub
+                    Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Deema Abed Alhameed — built with React-flavored HTML/CSS/JS
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
 
 </html>
 
